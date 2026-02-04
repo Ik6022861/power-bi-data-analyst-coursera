@@ -1,9 +1,30 @@
-Final Course Project: Transforming multiple data sources
+# Exercise – Merging Two Tables in Power BI
 
-In this exercise, you will apply your knowledge in an end-to-end scenario by using Power Query to clean and transform multiple data sources and join and merge them. You’ll also examine the valid, error, empty, min, max, unique, and distinct values in the rows. This will allow you to identify the anomalies in the data. Finally, you will remove the data sources with anomalies. This exercise will help you understand how to clean, transform, join, and merge data sources in Power Query, and identify potential data anomalies by using data profiling tools.
+## Overview
+This project demonstrates how to merge two datasets in Microsoft Power BI using Power Query.  
+The Adventure Works Sales and Product tables were combined to enrich sales data with product information.
 
-Files
-Adventure Works trades internationally and generates a large volume of sales data. To manage file sizes, the active Order table only includes data for the year 2023. Older data is stored in separate files for each year with the same fields and table structure. 
+## Data Sources
+- Sales.xlsx
+- Product.xlsx  
+(Common column: ProductKey)
 
-The task
-Your manager, Adio Quinn, asks you to conduct a detailed analysis of store sales. In the detail table, OrderDetails, there are multiple fields, but you only need ProductID, the quantity sold (which is in the field OrderQty), and the UnitPrice. Therefore, you are expected to remove unnecessary fields, and also eliminate empty rows, and identify any anomalies to remove those rows if necessary. After performing these tasks, you will append the two separate sales data sources together and then merge that with OrderDetails. Follow the steps below to complete the exercise.
+## Objective
+To merge Sales and Product tables and produce a dataset containing:
+- Sales Order Number
+- Order Date
+- Product Name
+- Quantity
+- Unit Price
+
+## Steps Performed
+1. Created a new Power BI project named *Exercise – Merging two tables*.
+2. Imported Sales and Product Excel files into Power BI.
+3. Opened Power Query Editor.
+4. Merged Sales and Product tables using **ProductKey**.
+5. Applied a **Left Outer Join**.
+6. Expanded the Product column to include Product Name.
+7. Removed unnecessary columns and reordered the final dataset.
+
+## Result
+The final table successfully combines sales and product data and is ready for analysis and reporting in Power BI.
