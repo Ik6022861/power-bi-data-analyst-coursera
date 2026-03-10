@@ -210,4 +210,4 @@ After completing this activity, the following skills were strengthened:
 
 **Ibrar Khan**
 
-Data Analytics | SQL | Power BI | Python
+Data Analytics | Power BI 
